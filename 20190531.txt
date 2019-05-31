@@ -1,0 +1,2 @@
+1. /dev/null 是空设备
+2. 通过 set follow-fork-mode child 设置在fork之后只追踪子进程 
