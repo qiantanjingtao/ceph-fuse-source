@@ -1026,7 +1026,8 @@ CephFuse::Handle::Handle(Client *c, int fd) :
 {
   snap_stag_map[CEPH_NOSNAP] = 0;
   stag_snap_map[0] = CEPH_NOSNAP;
-  memset(&args, 0, sizeof(args));
+  // 给args清空
+  memset(&args, 0, sizeof(args)); 
 }
 
 CephFuse::Handle::~Handle()
