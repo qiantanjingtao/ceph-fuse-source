@@ -81,6 +81,7 @@ public:
   void iput(Inode *in);
 
   int fd_on_success;
+  // StandaloneClient 是 Client的 继承类， 这里，用StandaloneClient激活了Client，是使用了多态
   Client *client;
 
   struct fuse_chan *ch;
