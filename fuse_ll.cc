@@ -81,6 +81,7 @@ public:
   void iput(Inode *in);
 
   int fd_on_success;
+  // StandaloneClient 是 Client的 继承类， 这里，用StandaloneClient激活了Client，是使用了多态
   Client *client;
 
   struct fuse_chan *ch;
@@ -1026,7 +1027,8 @@ CephFuse::Handle::Handle(Client *c, int fd) :
 {
   snap_stag_map[CEPH_NOSNAP] = 0;
   stag_snap_map[0] = CEPH_NOSNAP;
-  memset(&args, 0, sizeof(args));
+  // 给args清空
+  memset(&args, 0, sizeof(args)); 
 }
 
 CephFuse::Handle::~Handle()
