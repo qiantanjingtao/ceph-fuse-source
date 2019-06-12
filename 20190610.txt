@@ -1,0 +1,8 @@
+1. C++调用类中的函数时，会自带this参数，但不会显示地写出来. 例如: 
+     CephFuse::Handle::init (this=0x55555ff6a500, argc=2, argv=0x55555ff06060)
+2. gdb调试时，n显示的那一行并未执行，是下一步执行的行.
+3. CephFuse 构造的对象的操作都被转为其内部类CephFuse::Handle的对象操作上去.
+4. & + 变量名，可能意味着一个未被赋值的变量要将被送入这里初始化.
+5. Objecter类的定义在 osdc/Objecter.h 文件中的第1184行.
+6. 由于都继承了Dispatcher类, 并进行了初始化，所以很多的类都有 cct这个 CephContext 属性.
+7. Dispatcher 在msg/Dispatcher.h 中有定义
