@@ -1,0 +1,4 @@
+1. cfuse 相关的文件在 fuse_ll.cc 中, client有关的文件在Client.cc 文件中.
+2. metadata 是 Client的一个属性，根据继承，它也是StandaloneClient的一个属性，它的定义为: std::map<std::string, std::string> metadata; 它的注释为:"// Optional extra metadata about me to send to the MDS ".
+3. Mutex::Locker 是类的名字, lock 是类的对象， client_lock是构造函数的参数.
+4. Mutex::Locker lock(client_lock); 这句是个初始化的含义.
