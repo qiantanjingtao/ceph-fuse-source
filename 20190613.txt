@@ -1,0 +1,3 @@
+1. perms 主要是记录一些用户的id和用户所在组的id.
+2. uint16_t 代表的是无符号16位整形.
+3. ceph_tid_t 是64的int，定义为: typedef uint64_t ceph_tid_t; // transaction id
