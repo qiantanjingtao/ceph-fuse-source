@@ -1,0 +1,4 @@
+1. bl 是bufferlist的缩写.
+2. ceph_fs.h 是数据结构的定义文件, 同时也是定义各种fs专业术语的文件.
+3. Finisher 类是在专用工作线程中异步完成Contexts，它是表示回调的简单类。 排队上下文完成是线程安全的.
+4. fh 是 filehandle的缩写.
