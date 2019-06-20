@@ -1,0 +1,3 @@
+1. Inode表示一个单独文件的元数据信息，Dentry表示的是一个目录项，同时也保留了自己的父目录的指针.
+2. Client.cc 文件中的get_quota_root(in, perms) 是寻找当前文件系统根目录的函数.
+3. lambda 类似于钩子函数, 与std::function配合使用.
