@@ -1,0 +1,5 @@
+1. 通过或操作是添加一个权限，通过与操作是检查有没有某个权限.
+2. revoking = implemented - issued.
+3. C++ 中 单独声明unsigned，等同于 unsigned int， 表示无符号整形，4个字节，范围是 0 ~ 4294967295.
+4. xattr 是扩展属性的意思，以键值对的方式存储在inode上.
+5. inline data 是存放在inode剩余空间中的数据，也就是说，如果文件数据过小，可以直接存放在inode上.
