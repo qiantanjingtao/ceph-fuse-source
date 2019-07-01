@@ -1,0 +1,1 @@
+1. Client.h也就是client本身保留着inode_map，也就inode缓存，而client委托lru模块缓存着dentry缓存.
